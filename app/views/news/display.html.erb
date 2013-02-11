@@ -1,0 +1,53 @@
+<div "container-fluid" class>
+    <div class="row-fluid">
+        <div class="span12" id="main-panel">
+            <div class="page-header">
+                <br>Dance News</br>
+            </div>
+        <div class="row-fluid">
+            <div class="span9">
+                <div class="row-fluid">
+
+
+
+                    <ul class="nav nav-tabs">
+                        <li>
+                            <a data-toggle="tab" class="btn btn-large btn-primary" href="#tab1"><abbr title="Ballet Dance">Ballet</abbr></a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" class="btn btn-large btn-primary" href="#tab2"><abbr title="Modern Dance">Modern</abbr></a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" class="btn btn-large btn-primary" href="#tab3"><abbr title="Zumba Dance">Zumba</abbr></a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" class="btn btn-large btn-primary" href="#tab4"><abbr title="Ballroom Dance">Ballroom</abbr></a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane" id="tab1">
+                            <p><%=@ballet %></p>
+                            <%=image_tag("/assets/onegin.jpg") %>
+                        </div>
+                        <div class="tab-pane" id="tab2">
+                            <p><%=@modern %></p>
+                        </div>
+                        <div class="tab-pane" id="tab3">
+                            <p><%=@zumba %></p>
+                        </div>
+                        <div class="tab-pane" id="tab4">
+                            <p><%=@ballroom %></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="main-content">
+                        <%=table_helper %>
+                    </div>
+                </div>
+                <div class="row-fluid"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
